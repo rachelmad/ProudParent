@@ -22,4 +22,22 @@
     function onResume() {
         // TODO: This application has been reactivated. Restore application state here.
     };
+
+    // Retrieve image file location from the mobile device photo library 
+    function getPhotoURI() {
+        navigator.camera.getPhoto(onPhotoSuccess, onPhotoFail, {
+            quality: 50,
+            destinationType: destinationType.FILE_URI,
+            sourceType: pictureSource.PHOTOLIBRARY
+        });
+    }
+    // Callback from successful Photo Library event 
+    function onPhotoSuccess(imageURI) {
+        // Add img to div#album 
+        var img = document.createElement('img');
+        img.setAttribute('src', imageURL);
+        document.getElementById('album').appendChild(img);
+    };
+
+    
 } )();
