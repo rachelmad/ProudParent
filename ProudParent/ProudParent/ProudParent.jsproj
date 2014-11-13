@@ -58,14 +58,14 @@
       <Configuration>Release</Configuration>
       <Platform>Windows Phone</Platform>
     </ProjectConfiguration>
-	<ProjectConfiguration Include="Distribution|Android">
-	  <Configuration>Distribution</Configuration>
-	  <Platform>Android</Platform>
-	</ProjectConfiguration>
-	<ProjectConfiguration Include="Distribution|iOS">
-	  <Configuration>Distribution</Configuration>
-	  <Platform>iOS</Platform>
-	</ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
       <Configuration>Distribution</Configuration>
       <Platform>Windows-AnyCPU</Platform>
@@ -98,9 +98,305 @@
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="images\" />
+    <Content Include="bld\Debug\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bld\Debug\hooks\README.md" />
+    <Content Include="bld\Debug\platforms\android\.project" />
+    <Content Include="bld\Debug\platforms\android\AndroidManifest.xml" />
+    <Content Include="bld\Debug\platforms\android\assets\www\cordova.js" />
+    <Content Include="bld\Debug\platforms\android\assets\www\cordova_plugins.js" />
+    <Content Include="bld\Debug\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\Camera.js" />
+    <Content Include="bld\Debug\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraConstants.js" />
+    <Content Include="bld\Debug\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js" />
+    <Content Include="bld\Debug\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js" />
+    <Content Include="bld\Debug\platforms\android\assets\_where-is-www.txt" />
+    <Content Include="bld\Debug\platforms\android\build.xml" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\.project" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\AndroidManifest.xml" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\build.xml" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\local.properties" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\proguard-project.txt" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\project.properties" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\Address.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\Connection.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\ConnectionPool.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\Dispatcher.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\Failure.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\HttpResponseCache.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\AbstractOutputStream.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Base64.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\DiskLruCache.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Dns.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\FaultRecoveringOutputStream.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\AbstractHttpInputStream.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HeaderParser.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpAuthenticator.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpDate.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpEngine.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpsEngine.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpsURLConnectionImpl.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpTransport.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\HttpURLConnectionImpl.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\OkResponseCacheAdapter.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\Policy.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RawHeaders.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RequestHeaders.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\ResponseHeaders.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RetryableOutputStream.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\RouteSelector.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\SpdyTransport.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\Transport.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\http\UnknownLengthHttpInputStream.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\NamedRunnable.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Platform.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\ErrorCode.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\FrameReader.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\FrameWriter.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\HeadersMode.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Hpack.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Http20Draft06.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\IncomingStreamHandler.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\NameValueBlockReader.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Ping.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Settings.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Spdy3.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\SpdyConnection.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\SpdyStream.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\spdy\Variant.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\StrictLineReader.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\tls\DistinguishedNameParser.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\tls\OkHostnameVerifier.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\internal\Util.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\Job.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\MediaType.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\OkAuthenticator.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\OkHttpClient.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\OkResponseCache.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\Request.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\Response.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\ResponseSource.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\Route.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\RouteDatabase.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\com\squareup\okhttp\TunnelRequest.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\App.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\AuthenticationToken.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\CallbackContext.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\Config.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\CordovaActivity.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\CordovaArgs.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\CordovaChromeClient.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\CordovaInterface.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\CordovaPlugin.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\CordovaResourceApi.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebView.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\CordovaWebViewClient.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\DirectoryManager.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\DroidGap.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\ExifHelper.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\ExposedJsApi.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\FileHelper.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\IceCreamCordovaWebViewClient.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\JSONUtils.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\LinearLayoutSoftKeyboardDetect.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\LOG.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\NativeToJsMessageQueue.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\PluginEntry.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\PluginManager.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\PluginResult.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\ScrollEvent.java" />
+    <Content Include="bld\Debug\platforms\android\CordovaLib\src\org\apache\cordova\Whitelist.java" />
+    <Content Include="bld\Debug\platforms\android\cordova\android_sdk_version" />
+    <Content Include="bld\Debug\platforms\android\cordova\build" />
+    <Content Include="bld\Debug\platforms\android\cordova\build.bat" />
+    <Content Include="bld\Debug\platforms\android\cordova\check_reqs" />
+    <Content Include="bld\Debug\platforms\android\cordova\clean" />
+    <Content Include="bld\Debug\platforms\android\cordova\clean.bat" />
+    <Content Include="bld\Debug\platforms\android\cordova\defaults.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bld\Debug\platforms\android\cordova\lib\android_sdk_version.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\appinfo.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\build.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\check_reqs.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\clean.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\device.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\emulator.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\exec.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\install-device" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\install-device.bat" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\install-emulator" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\install-emulator.bat" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\list-devices" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\list-devices.bat" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\list-emulator-images" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\list-emulator-images.bat" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\list-started-emulators" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\list-started-emulators.bat" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\log.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\run.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\spawn.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\start-emulator" />
+    <Content Include="bld\Debug\platforms\android\cordova\lib\start-emulator.bat" />
+    <Content Include="bld\Debug\platforms\android\cordova\log" />
+    <Content Include="bld\Debug\platforms\android\cordova\log.bat" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\q\benchmark\compare-with-callbacks.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\q\benchmark\scenarios.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\q\CONTRIBUTING.md" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\q\LICENSE" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\q\package.json" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\q\q.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\q\queue.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\q\README.md" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\.documentup.json" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\.jshintrc" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\.npmignore" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\.travis.yml" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\bin\shjs" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\global.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\LICENSE" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\make.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\package.json" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\README.md" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\scripts\generate-docs.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\scripts\run-tests.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\shell.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\cat.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\cd.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\chmod.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\common.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\cp.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\dirs.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\echo.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\error.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\exec.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\find.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\grep.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\ls.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\mkdir.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\mv.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\popd.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\pushd.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\pwd.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\rm.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\sed.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\tempdir.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\test.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\to.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\toEnd.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\node_modules\shelljs\src\which.js" />
+    <Content Include="bld\Debug\platforms\android\cordova\run" />
+    <Content Include="bld\Debug\platforms\android\cordova\run.bat" />
+    <Content Include="bld\Debug\platforms\android\cordova\version" />
+    <Content Include="bld\Debug\platforms\android\cordova\version.bat" />
+    <Content Include="bld\Debug\platforms\android\custom_rules.xml" />
+    <Content Include="bld\Debug\platforms\android\local.properties" />
+    <Content Include="bld\Debug\platforms\android\platform_www\cordova.js" />
+    <Content Include="bld\Debug\platforms\android\proguard-project.txt" />
+    <Content Include="bld\Debug\platforms\android\project.properties" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-hdpi\icon.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-land-hdpi\screen.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-land-ldpi\screen.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-land-mdpi\screen.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-land-xhdpi\screen.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-ldpi\icon.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-mdpi\icon.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-port-hdpi\screen.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-port-ldpi\screen.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-port-mdpi\screen.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-port-xhdpi\screen.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable-xhdpi\icon.png" />
+    <Content Include="bld\Debug\platforms\android\res\drawable\icon.png" />
+    <Content Include="bld\Debug\platforms\android\res\values\strings.xml" />
+    <Content Include="bld\Debug\platforms\android\res\xml\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bld\Debug\platforms\android\src\io\cordova\ProudParent\ProudParent.java" />
+    <Content Include="bld\Debug\platforms\android\src\org\apache\cordova\camera\CameraLauncher.java" />
+    <Content Include="bld\Debug\platforms\android\src\org\apache\cordova\camera\ExifHelper.java" />
+    <Content Include="bld\Debug\platforms\android\src\org\apache\cordova\camera\FileHelper.java" />
+    <Content Include="bld\Debug\plugins\android.json" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\.fetch.json" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\CONTRIBUTING.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\doc\de\index.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\doc\es\index.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\doc\fr\index.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\doc\index.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\doc\it\index.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\doc\ja\index.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\doc\ko\index.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\doc\pl\index.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\doc\zh\index.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\LICENSE" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\NOTICE" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\package.json" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\plugin.xml" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\README.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\RELEASENOTES.md" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\android\CameraLauncher.java" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\android\ExifHelper.java" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\android\FileHelper.java" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\blackberry10\index.js" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\firefoxos\CameraProxy.js" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ios\CDVCamera.h" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ios\CDVCamera.m" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ios\CDVExif.h" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ios\CDVJpegHeaderWriter.h" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ios\CDVJpegHeaderWriter.m" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ubuntu\back.png" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ubuntu\camera.cpp" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ubuntu\camera.h" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ubuntu\CaptureWidget.qml" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ubuntu\shoot.png" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ubuntu\toolbar-left.png" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ubuntu\toolbar-middle.png" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\ubuntu\toolbar-right.png" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\windows8\CameraProxy.js" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\src\wp\Camera.cs" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\www\Camera.js" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\www\CameraConstants.js" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js" />
+    <Content Include="bld\Debug\plugins\org.apache.cordova.camera\www\ios\CameraPopoverHandle.js" />
+    <Content Include="bld\Debug\www\css\index.css" />
+    <Content Include="bld\Debug\www\img\logo.png" />
+    <Content Include="bld\Debug\www\index.html" />
+    <Content Include="bld\Debug\www\js\index.js" />
+    <Content Include="bld\Ripple\Android\Debug\add.html" />
+    <Content Include="bld\Ripple\Android\Debug\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bld\Ripple\Android\Debug\cordova.js" />
+    <Content Include="bld\Ripple\Android\Debug\cordova_plugins.js" />
+    <Content Include="bld\Ripple\Android\Debug\css\index.css" />
+    <Content Include="bld\Ripple\Android\Debug\img\home.png" />
+    <Content Include="bld\Ripple\Android\Debug\img\image.png" />
+    <Content Include="bld\Ripple\Android\Debug\img\leaf.png" />
+    <Content Include="bld\Ripple\Android\Debug\img\share.png" />
+    <Content Include="bld\Ripple\Android\Debug\index.html" />
+    <Content Include="bld\Ripple\Android\Debug\kid.html" />
+    <Content Include="bld\Ripple\Android\Debug\otherPage.html" />
+    <Content Include="bld\Ripple\Android\Debug\plugins\org.apache.cordova.camera\www\Camera.js" />
+    <Content Include="bld\Ripple\Android\Debug\plugins\org.apache.cordova.camera\www\CameraConstants.js" />
+    <Content Include="bld\Ripple\Android\Debug\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js" />
+    <Content Include="bld\Ripple\Android\Debug\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js" />
+    <Content Include="bld\Ripple\Android\Debug\Project_Readme.html" />
+    <Content Include="bld\Ripple\Android\Debug\scripts\android2.3-jscompat.js" />
+    <Content Include="bld\Ripple\Android\Debug\scripts\camera.js" />
+    <Content Include="bld\Ripple\Android\Debug\scripts\index.js" />
+    <Content Include="bld\Ripple\Android\Debug\scripts\platformOverrides.js" />
+    <Content Include="img\home.png" />
+    <Content Include="img\image.png" />
+    <Content Include="img\leaf.png" />
+    <Content Include="img\share.png" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Folder Include="bin\Android\Debug\" />
+    <Folder Include="bld\Android\Debug\" />
+    <Folder Include="bld\Debug\merges\android\" />
+    <Folder Include="bld\Debug\platforms\android\cordova\node_modules\.bin\" />
+    <Folder Include="bld\Debug\platforms\android\libs\" />
+    <Folder Include="bld\Ripple\Android\Debug\platforms\" />
     <Folder Include="merges\ios\" />
     <Content Include="merges\windows8\scripts\platformOverrides.js" />
     <Content Include="merges\windows8\scripts\winstore-jscompat.js" />
@@ -115,10 +411,259 @@
     <Folder Include="res\screens\wp8\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="config.xml" >
+    <Content Include="config.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="index.html" />
+    <Content Include="partials\addAlbum.html" />
+    <Content Include="partials\share.html" />
+    <Content Include="partials\takeAPic.html" />
+    <Content Include="partials\selectAKid.html" />
+    <Content Include="partials\kidTree.html" />
+    <Content Include="partials\menu.html" />
+    <Content Include="partials\album.html" />
+    <Content Include="partials\topBar.html" />
+    <Content Include="Project_Readme.html" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\bower_components\angular-bootstrap\.bower.json" />
+    <Content Include="scripts\bower_components\angular-bootstrap\bower.json" />
+    <Content Include="scripts\bower_components\angular-bootstrap\ui-bootstrap-tpls.js" />
+    <Content Include="scripts\bower_components\angular-bootstrap\ui-bootstrap-tpls.min.js" />
+    <Content Include="scripts\bower_components\angular-bootstrap\ui-bootstrap.js" />
+    <Content Include="scripts\bower_components\angular-bootstrap\ui-bootstrap.min.js" />
+    <Content Include="scripts\bower_components\angular-resource\.bower.json" />
+    <Content Include="scripts\bower_components\angular-resource\angular-resource.js" />
+    <Content Include="scripts\bower_components\angular-resource\angular-resource.min.js" />
+    <Content Include="scripts\bower_components\angular-resource\angular-resource.min.js.map" />
+    <Content Include="scripts\bower_components\angular-resource\bower.json" />
+    <Content Include="scripts\bower_components\angular-resource\README.md" />
+    <Content Include="scripts\bower_components\angular-touch\.bower.json" />
+    <Content Include="scripts\bower_components\angular-touch\angular-touch.js" />
+    <Content Include="scripts\bower_components\angular-touch\angular-touch.min.js" />
+    <Content Include="scripts\bower_components\angular-touch\angular-touch.min.js.map" />
+    <Content Include="scripts\bower_components\angular-touch\bower.json" />
+    <Content Include="scripts\bower_components\angular-touch\README.md" />
+    <Content Include="scripts\bower_components\angular-ui-router\.bower.json" />
+    <Content Include="scripts\bower_components\angular-ui-router\.gitignore" />
+    <Content Include="scripts\bower_components\angular-ui-router\.travis.yml" />
+    <Content Include="scripts\bower_components\angular-ui-router\bower.json" />
+    <Content Include="scripts\bower_components\angular-ui-router\component.json" />
+    <Content Include="scripts\bower_components\angular-ui-router\config\jsdoc.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\config\karma.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\Gruntfile.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\lib\angular-1.1.5.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\LICENSE" />
+    <Content Include="scripts\bower_components\angular-ui-router\package.json" />
+    <Content Include="scripts\bower_components\angular-ui-router\README.md" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\angular-ui-router.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\angular-ui-router.min.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\%24resolve.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\%24templateFactory.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\%24urlMatcherFactory.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\common.js.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\global.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\index.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\resolve.js.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\scripts\linenumber.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\scripts\prettify\Apache-License-2.0.txt" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\scripts\prettify\lang-css.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\scripts\prettify\prettify.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\styles\jsdoc-default.css" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\styles\prettify-jsdoc.css" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\styles\prettify-tomorrow.css" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\templateFactory.js.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\UrlMatcher.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\release\doc\urlMatcherFactory.js.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\bootstrap.min.css" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\contacts.detail.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\contacts.detail.item.edit.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\contacts.detail.item.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\contacts.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\contacts.json" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\contacts.list.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\factory.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\index.html" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\module.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\states.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\sample\styles.css" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\common.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\compat.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\resolve.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\state.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\stateDirectives.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\stateFilters.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\templateFactory.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\urlMatcherFactory.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\urlRouter.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\view.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\src\viewDirective.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\compat\matchers.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\compat\routeParamsSpec.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\compat\routeSpec.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\debug.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\lib\angular-mocks-1.1.5.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\resolveSpec.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\stateDirectivesSpec.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\stateFiltersSpec.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\stateSpec.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\templateFactorySpec.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\testUtils.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\urlMatcherFactorySpec.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\urlRouterSpec.js" />
+    <Content Include="scripts\bower_components\angular-ui-router\test\viewDirectiveSpec.js" />
+    <Content Include="scripts\bower_components\angular\.bower.json" />
+    <Content Include="scripts\bower_components\angular\angular-csp.css" />
+    <Content Include="scripts\bower_components\angular\angular.js" />
+    <Content Include="scripts\bower_components\angular\angular.min.js" />
+    <Content Include="scripts\bower_components\angular\angular.min.js.gzip" />
+    <Content Include="scripts\bower_components\angular\angular.min.js.map" />
+    <Content Include="scripts\bower_components\angular\bower.json" />
+    <Content Include="scripts\bower_components\angular\README.md" />
+    <Content Include="scripts\bower_components\bootstrap\.bower.json" />
+    <Content Include="scripts\bower_components\bootstrap\bower.json" />
+    <Content Include="scripts\bower_components\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="scripts\bower_components\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="scripts\bower_components\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="scripts\bower_components\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="scripts\bower_components\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="scripts\bower_components\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="scripts\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="scripts\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="scripts\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="scripts\bower_components\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="scripts\bower_components\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="scripts\bower_components\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\bower_components\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="scripts\bower_components\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="scripts\bower_components\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="scripts\bower_components\bootstrap\Gruntfile.js" />
+    <Content Include="scripts\bower_components\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="scripts\bower_components\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="scripts\bower_components\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="scripts\bower_components\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="scripts\bower_components\bootstrap\js\affix.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\alert.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\button.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\carousel.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\collapse.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\dropdown.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\modal.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\popover.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\scrollspy.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\tab.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\tooltip.js" />
+    <Content Include="scripts\bower_components\bootstrap\js\transition.js" />
+    <Content Include="scripts\bower_components\bootstrap\less\alerts.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\badges.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\bootstrap.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\breadcrumbs.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\button-groups.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\buttons.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\carousel.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\close.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\code.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\component-animations.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\dropdowns.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\forms.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\glyphicons.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\grid.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\input-groups.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\jumbotron.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\labels.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\list-group.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\media.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\alerts.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\buttons.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\center-block.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\forms.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\gradients.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\grid.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\image.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\labels.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\list-group.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\opacity.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\pagination.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\panels.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\resize.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\size.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\table-row.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\modals.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\navbar.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\navs.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\normalize.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\pager.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\pagination.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\panels.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\popovers.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\print.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\progress-bars.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\responsive-embed.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\responsive-utilities.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\scaffolding.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\tables.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\theme.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\thumbnails.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\tooltip.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\type.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\utilities.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\variables.less" />
+    <Content Include="scripts\bower_components\bootstrap\less\wells.less" />
+    <Content Include="scripts\bower_components\bootstrap\LICENSE" />
+    <Content Include="scripts\bower_components\bootstrap\package.json" />
+    <Content Include="scripts\bower_components\bootstrap\README.md" />
+    <Content Include="scripts\bower_components\cordova\.bower.json" />
+    <Content Include="scripts\bower_components\cordova\bower.json" />
+    <Content Include="scripts\bower_components\cordova\cordova.amazon-fireos.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.android.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.bada.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.blackberry.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.blackberry10.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.browser.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.errgen.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.firefoxos.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.ios.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.osx.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.test.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.tizen.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.ubuntu.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.webos.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.windows8.js" />
+    <Content Include="scripts\bower_components\cordova\cordova.windowsphone.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.amazon-fireos-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.android-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.bada-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.blackberry-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.blackberry10-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.browser-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.errgen-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.firefoxos-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.ios-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.osx-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.test-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.tizen-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.ubuntu-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.webos-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.windows8-debug.js" />
+    <Content Include="scripts\bower_components\cordova\debug\cordova.windowsphone-debug.js" />
+    <Content Include="scripts\bower_components\cordova\README.md" />
+    <Content Include="scripts\camera.js" />
+    <Content Include="scripts\controllers.js" />
     <Content Include="scripts\index.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />
@@ -165,45 +710,40 @@
     <Content Include="res\screens\wp8\screen-portrait.jpg" />
   </ItemGroup>
   <PropertyGroup>
-	<TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
-	<DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-	<TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
-	<TypeScriptRemoveComments>false</TypeScriptRemoveComments>
-	<TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-	<TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
-	<TypeScriptRemoveComments>true</TypeScriptRemoveComments>
-	<TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
-	<TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
-	<TypeScriptRemoveComments>true</TypeScriptRemoveComments>
-	<TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
   </PropertyGroup>
   <Import Project="$(AppData)\npm\node_modules\vs-mda-targets\Microsoft.MDA.targets" />
   <Import Project="$(AppData)\npm\node_modules\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
   <PropertyGroup>
     <ProjectUISubcaption>Multi-Device Hybrid App</ProjectUISubcaption>
   </PropertyGroup>
-
   <Target Name="EnsureBuildPrerequisites">
     <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
     <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
     <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Multi-Device Hybrid Apps could not be determined. Please check that the extension has been installed." />
-
     <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
     <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
     <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Multi-Device Hybrid Apps has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
-
     <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
     <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
     <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
-
     <!-- Installs (if necessary) the supporting Nodejs module -->
-    <Exec Command='"$(MDAVsixDir)"\packages\vs-mda\install "$(NodeJsDir)" "$(MDAVsixDir)"\packages\vs-mda'/>
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
   </Target>
-
 </Project>
