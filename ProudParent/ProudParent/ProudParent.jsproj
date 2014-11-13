@@ -391,6 +391,7 @@
     <Content Include="img\share.png" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Content Include="scripts\platformOverrides.js" />
     <Folder Include="bin\Android\Debug\" />
     <Folder Include="bld\Android\Debug\" />
     <Folder Include="bld\Debug\merges\android\" />
@@ -665,7 +666,6 @@
     <Content Include="scripts\camera.js" />
     <Content Include="scripts\controllers.js" />
     <Content Include="scripts\index.js" />
-    <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />
     <Content Include="res\cert\android\ant.properties" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />
