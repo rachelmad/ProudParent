@@ -47,4 +47,12 @@ h1 {/*Reserving for title of page*/
     width: 100%;
     position:  relative;
     text-align: center;
+    font-family: "Lobster", sans-serif;
+}
+
+#li {
+    list-style-type: none;
+}
+#buttonText{
+    list-style-type: none;
 }
