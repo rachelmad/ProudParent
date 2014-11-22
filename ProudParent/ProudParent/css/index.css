@@ -47,6 +47,21 @@ h1 {/*Reserving for title of page*/
     width: 100%;
     position:  relative;
     text-align: center;
+<<<<<<< HEAD
+}
+
+/* LOG IN PAGE   
+----------------------------------------------------------*/
+#logInArea {
+    background-color: #b7c68b;
+    padding: 1em;
+    margin: 1em 2em;
+    text-align: center;
+}
+
+#logInArea a {
+    color: white;
+=======
     font-family: "Lobster", sans-serif;
 }
 
@@ -55,4 +70,5 @@ h1 {/*Reserving for title of page*/
 }
 #buttonText{
     list-style-type: none;
+>>>>>>> bb7bcee550cb1413f965c6c6bc0d49f77ac10282
 }

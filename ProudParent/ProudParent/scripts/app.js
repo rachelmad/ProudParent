@@ -15,6 +15,14 @@
                 url: "",
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
+                    "app": { templateUrl: "partials/logIn.html" },
+                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                }
+            }).
+            state('ChooseKid', {
+                url: "",
+                views: {
+                    "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
                     "app": { templateUrl: "partials/selectAKid.html" },
                     "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
