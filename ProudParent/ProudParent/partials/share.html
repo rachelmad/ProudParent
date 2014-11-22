@@ -2,6 +2,8 @@
 <html>
 <body>
     <h1>Share Album</h1>
-    <div>Facebook and other stuff</div>
+    <button onclick="window.plugins.socialsharing.shareViaTwitter('Message via Twitter')">message via Twitter</button>
+    <button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button>
+
 </body>
 </html>

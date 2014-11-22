@@ -5,4 +5,7 @@
     <ShowAllFiles>false</ShowAllFiles>
     <AutoRefresh>false</AutoRefresh>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <DebuggerFlavor>RippleNexus</DebuggerFlavor>
+  </PropertyGroup>
 </Project>

@@ -13,6 +13,5 @@
   <preference name="AndroidLaunchMode" value="standard" />
   <vs:plugin name="org.apache.cordova.camera" version="0.3.0" />
   <vs:plugin name="nl.x-services.plugins.socialsharing" version="4.3.10" />
-  <vs:plugin name="org.apache.cordova.battery-status" version="0.2.11" />
   <vs:platformSpecificValues />
 </widget>
