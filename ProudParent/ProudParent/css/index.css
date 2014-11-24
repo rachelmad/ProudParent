@@ -52,16 +52,15 @@ h1 {/*Reserving for title of page*/
 
 /* LOG IN PAGE   
 ----------------------------------------------------------*/
-#logInArea {
+.accountArea {
     background-color: #b7c68b;
     padding: 1em;
     margin: 1em 2em;
     text-align: center;
 }
 
-#logInArea a {
+.accountArea a {
     color: white;
-=======
     font-family: "Lobster", sans-serif;
 }
 

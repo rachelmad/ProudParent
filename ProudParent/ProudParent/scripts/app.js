@@ -20,7 +20,7 @@
                 }
             }).
             state('ChooseKid', {
-                url: "",
+                url: "/ChooseKid",
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
                     "app": { templateUrl: "partials/selectAKid.html" },
@@ -64,6 +64,14 @@
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
                     "app": { templateUrl: "partials/addAlbum.html" },
+                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                }
+            }).
+            state('SignUp', {
+                url: "/SignUp",
+                views: {
+                    "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
+                    "app": { templateUrl: "partials/signUp.html" },
                     "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
             });
