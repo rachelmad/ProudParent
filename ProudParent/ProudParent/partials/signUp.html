@@ -1,12 +1,16 @@
 ﻿<body>
     <h1>ProudParent</h1>
     <div class="accountArea">
-        <p>
+        
+        <form id="signUpForm">
             <label>First Name: <input name="fName" required /></label>
             <label>Last Name: <input name="lName" required /></label>
-            <label>Email:<input name="userName" required /></label><br />
-            <label>Password: <input name="password" required /></label><br />
-            <button>Sign Up</button>
-        </p>
+            <label>Email:<input name="uName" required /></label>
+            <br />
+            <label>Password: <input name="pword" required /></label>
+            <br />
+            <input type="button" value="Sign Up" onclick="signUp(this.form)">
+        </form>
+        
     </div>
 </body>

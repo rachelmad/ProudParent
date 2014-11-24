@@ -7,6 +7,7 @@
         //'restangular',
     ]);
 
+    
     proudParent.config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise(""),
 

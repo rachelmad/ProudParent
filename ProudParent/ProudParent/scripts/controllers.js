@@ -21,4 +21,7 @@ proudParentControllerModule.controller('menuCtrl', ['$scope', '$state', '$rootSc
     //            document.getElementsByTagName("body").style.transform = "rotate(90deg)";
     //        }
     //    };
-    }]);
+    }
+    
+]);
+

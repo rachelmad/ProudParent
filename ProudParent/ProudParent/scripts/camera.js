@@ -14,3 +14,4 @@ function cameraCallback(imageData) {
 function cameraError(message) {
     // Show a helpful message
 }
+

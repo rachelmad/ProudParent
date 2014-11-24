@@ -14,6 +14,7 @@
   <vs:features>
     <vs:feature>org.apache.cordova.inappbrowser@0.5.0</vs:feature>
     <vs:feature>com.msopentech.azure-mobile-services@0.1.2</vs:feature>
+    <vs:feature>org.apache.cordova.camera@0.3.0</vs:feature>
   </vs:features>
   <vs:platformSpecificValues />
 </widget>

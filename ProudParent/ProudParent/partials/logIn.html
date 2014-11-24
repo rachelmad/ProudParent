@@ -3,11 +3,11 @@
     <!--Figure out how to log in-->
     <form>
         <div class="accountArea">
-            <p>
-                <label><input name="userName" placeholder="Email" required /></label><br />
-                <label><input name="password" placeholder="Password" required /></label><br />
-                <button>Log In</button>
-            </p>
+            <form id="logInForm">
+                <label><input name="uName" placeholder="Email" required /></label><br />
+                <label><input name="pword" placeholder="Password" required /></label><br />
+                <input type="button" value="Log In" onclick="authenticateEmail(this.form)">
+            </form>
             <p>New? <a ui-sref="SignUp">Create account</a></p>
         </div>
     </form>
