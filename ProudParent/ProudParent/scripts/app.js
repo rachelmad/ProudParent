@@ -3,6 +3,7 @@
         'ngTouch',
         'proudParentControllerModule',
         'logControl', 'registerControl',
+        'addKidControl',
         'ui.router',
         'ui.bootstrap'
         //'restangular',
@@ -74,6 +75,14 @@
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
                     "app": { templateUrl: "partials/signUp.html" },
+                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                }
+            }).
+            state('AddKid', {
+                url: "/AddKid",
+                views: {
+                    "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
+                    "app": { templateUrl: "partials/addKid.html" },
                     "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
             });

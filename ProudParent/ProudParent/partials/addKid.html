@@ -1,0 +1,15 @@
+﻿<body>
+    <h1>Add Child</h1>
+
+    <div class="addKidArea" ng-controller="addKidCtrl">
+        <form id="addKidForm">
+            <label>Name: <input type="text" ng-model="childInfo.name" /></label>
+            <label>Birthday: <input type="date" placeholder="Password" ng-model="childInfo.bday"></label>
+            <!--<label><input name="uName" placeholder="Email" required /></label><br />
+            <label><input name="pword" placeholder="Password" required /></label><br />-->
+            <button ng-click='addChild(childInfo)'>Add</button>
+            <!--<input type="button" value="Log In" onclick="authenticateEmail(this.form)">-->
+        </form>
+    </div>
+
+</body>
