@@ -1,16 +1,19 @@
 ﻿<body>
     <h1>ProudParent</h1>
     <!--Figure out how to log in-->
-    <form>
-        <div class="accountArea">
+    
+        <div class="accountArea" ng-controller="logIn">
             <form id="logInForm">
-                <label><input name="uName" placeholder="Email" required /></label><br />
-                <label><input name="pword" placeholder="Password" required /></label><br />
-                <input type="button" value="Log In" onclick="authenticateEmail(this.form)">
+                <input type="email" placeholder="Email" ng-model="log.uName" />
+                <input type="password" placeholder="Password" ng-model="log.pword">
+                <!--<label><input name="uName" placeholder="Email" required /></label><br />
+                <label><input name="pword" placeholder="Password" required /></label><br />-->
+                <button ng-click='authenticate(log)'>Log In</button>
+                <!--<input type="button" value="Log In" onclick="authenticateEmail(this.form)">-->
             </form>
             <p>New? <a ui-sref="SignUp">Create account</a></p>
         </div>
-    </form>
+    
     <a ui-sref="ChooseKid">Select a Kid (temp)</a>
 
 

@@ -2,6 +2,7 @@
     var proudParent = angular.module('proudParent', [
         'ngTouch',
         'proudParentControllerModule',
+        'logControl', 'registerControl',
         'ui.router',
         'ui.bootstrap'
         //'restangular',

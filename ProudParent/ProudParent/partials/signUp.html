@@ -1,15 +1,21 @@
 ﻿<body>
     <h1>ProudParent</h1>
-    <div class="accountArea">
+    <div class="accountArea" ng-controller="signUpCtrl">
         
         <form id="signUpForm">
-            <label>First Name: <input name="fName" required /></label>
-            <label>Last Name: <input name="lName" required /></label>
-            <label>Email:<input name="uName" required /></label>
+            First Name: <input type="text" required ng-model="signUpInfo.fname" />
+            Last Name: <input type="text" required ng-model="signUpInfo.lname" />
+            Email: <input type="email" required ng-model="signUpInfo.uName" />
+            Password: <input type="password" required ng-model="signUpInfo.pword" />
             <br />
-            <label>Password: <input name="pword" required /></label>
-            <br />
-            <input type="button" value="Sign Up" onclick="signUp(this.form)">
+            <button ng-click='addUser(signUpInfo)'>Sign Up</button>
+            <!--<label>First Name: <input name="fName" required /></label>
+            <!--<label>Last Name: <input name="lName" required /></label>
+            <!--<label>Email:<input name="uName" required /></label>
+            <!--<br />
+            <!--<label>Password: <input name="pword" required /></label>
+            <!--<br />
+            <input type="button" value="Sign Up" onclick="signUp(this.form)">-->
         </form>
         
     </div>
