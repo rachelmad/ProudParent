@@ -2,9 +2,18 @@
 <body>
     <h1>ProudParent</h1>
     <!--Write function to get/list all kids-->
-    <a ui-sref="Home">Kid One</a>
-    <a ui-sref="AddKid">Add Child</a>
-    <button onclick="localStorageTest()">Click me!</button>
-    <h3>Options</h3>
+    <ul ng-controller="listKidsCtrl">
+        <li ng-repeat="k in kids">
+            <a ui-sref="Home">{{k.name}}</a>
+        </li>
+        <li><a ui-sref="AddKid">Add Child</a></li>
+    </ul>
+
+    <!--<a ui-sref="Home">Kid One</a>-->
+    
+    <!--<div ng-controller="listKidsCtrl">
+        <button ng-click="kids.list()">Click me!</button>
+    </div>-->
+    <!--<h3>Options</h3>-->
 
 </body>

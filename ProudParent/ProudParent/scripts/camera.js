@@ -15,7 +15,3 @@ function cameraError(message) {
     // Show a helpful message
 }
 
-function localStorageTest() {
-    alert("Hello");
-    alert(localStorage.getItem("userId"));
-}

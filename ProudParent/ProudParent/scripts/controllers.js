@@ -49,19 +49,21 @@ logControl.controller('logIn', ['$scope', '$state',
                     localStorage.setItem("lastName", results[0].lastName);
                     localStorage.setItem("userName", results[0].userName);
 
-                    $state.go('ChooseKid');
+                    var query = childrenTable.where({
+                        parentId: localStorage.getItem("userId")
+                    }).select('name', 'id')
+                    .read().done(function (kidResults) {
+                        localStorage.setItem("kidList", JSON.stringify(kidResults));
+
+                        $state.go('ChooseKid');
+                    });
+                    
                 };
             }, function (err) {
                 alert("Error: " + err);
             });
-        };      
-    }
-]);
+        };
 
-var registerControl = angular.module('registerControl', []);
-
-registerControl.controller('signUpCtrl', ['$scope', '$state',
-    function ($scope, $state) {
         $scope.addUser = function (signUpInfo) {
             var checkUnique = userTable.where({
                 userName: $scope.signUpInfo.uName
@@ -75,13 +77,16 @@ registerControl.controller('signUpCtrl', ['$scope', '$state',
                     };
                     userTable.insert(newUser).done(function (inserted) {
                         localStorage.setItem("userId", inserted.id);
-                    });
-                
-                    localStorage.setItem("userName", $scope.signUpInfo.uName);  
-                    localStorage.setItem("firstName", $scope.signUpInfo.fName);
-                    localStorage.setItem("lastName", $scope.signUpInfo.lName);
 
-                    $state.go('ChooseKid');
+                        localStorage.setItem("userName", $scope.signUpInfo.uName);
+                        localStorage.setItem("firstName", $scope.signUpInfo.fName);
+                        localStorage.setItem("lastName", $scope.signUpInfo.lName);
+                        
+                        localStorage.removeItem("kidList");
+
+                        $state.go('ChooseKid');
+                    });
+
                 } else {
                     alert("Sorry. That email is already in use.");
                 };
@@ -113,3 +118,15 @@ addKidControl.controller('addKidCtrl', ['$scope', '$state',
         };
     }
 ]);
+
+
+var listKidsControl = angular.module('listKidsControl', []);
+
+listKidsControl.controller('listKidsCtrl', ['$scope', '$state', 
+    function ($scope, $state) {
+        $scope.kids = angular.fromJson(localStorage.getItem("kidList"));
+    }
+]);
+
+
+
