@@ -104,6 +104,9 @@
     <Content Include="img\share.png" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Content Include="partials\addKid.html" />
+    <Content Include="partials\logIn.html" />
+    <Content Include="partials\signUp.html" />
     <Content Include="plugins\nl.x-services.plugins.socialsharing\.fetch.json" />
     <Content Include="plugins\nl.x-services.plugins.socialsharing\plugin.xml" />
     <Content Include="plugins\nl.x-services.plugins.socialsharing\README.md" />
