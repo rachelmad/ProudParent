@@ -30,6 +30,7 @@ var client = new MobileServiceClient('https://proudparent.azure-mobile.net/', 'G
 
 var userTable = client.getTable('User');
 var childrenTable = client.getTable('Children');
+var mediaTable = client.getTable('Media');
 
 var logControl = angular.module('logControl', []);
 
@@ -95,12 +96,11 @@ logControl.controller('logIn', ['$scope', '$state',
     }
 ]);
 
-var addKidControl = angular.module('addKidControl', []);
+var kidControl = angular.module('kidControl', []);
 
-addKidControl.controller('addKidCtrl', ['$scope', '$state',
+kidControl.controller('kidCtrl', ['$scope', '$state',
     function ($scope, $state) {
         $scope.addChild = function (childInfo) {
-            alert("Here");
             alert(localStorage.getItem("userId"));
             var newKid = {
                 parentId: localStorage.getItem("userId"),
@@ -110,23 +110,29 @@ addKidControl.controller('addKidCtrl', ['$scope', '$state',
 
             var enterKid = childrenTable.insert(newKid).done(function (inserted) {
                 localStorage.setItem("KidId", inserted.id);
-
-                alert(localStorage.getItem("KidId"));
             });
+            localStorage.setItem("kidName", name);
 
             $state.go('Home');
         };
-    }
-]);
 
-
-var listKidsControl = angular.module('listKidsControl', []);
-
-listKidsControl.controller('listKidsCtrl', ['$scope', '$state', 
-    function ($scope, $state) {
         $scope.kids = angular.fromJson(localStorage.getItem("kidList"));
+
+        $scope.getMedia = function (name, id) {
+            var query = mediaTable.where({
+                childid: id
+            })
+                .read().done(function (results) {
+                    localStorage.setItem("kidMedia", JSON.stringify(results));
+                    localStorage.setItem("kidName", name);
+
+                    $state.go('Home');
+                });
+        }
     }
 ]);
+
+
 
 
 

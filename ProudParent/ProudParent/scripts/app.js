@@ -3,7 +3,7 @@
         'ngTouch',
         'proudParentControllerModule',
         'logControl', //'registerControl',
-        'addKidControl', 'listKidsControl',
+        'kidControl', //'listKidsControl',
         'ui.router',
         'ui.bootstrap'
         //'restangular',

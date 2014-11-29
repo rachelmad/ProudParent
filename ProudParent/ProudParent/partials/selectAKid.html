@@ -2,9 +2,9 @@
 <body>
     <h1>ProudParent</h1>
     <!--Write function to get/list all kids-->
-    <ul ng-controller="listKidsCtrl">
+    <ul ng-controller="kidCtrl">
         <li ng-repeat="k in kids">
-            <a ui-sref="Home">{{k.name}}</a>
+            <a ng-click="getMedia(k.name, k.id)">{{k.name}}</a>
         </li>
         <li><a ui-sref="AddKid">Add Child</a></li>
     </ul>
