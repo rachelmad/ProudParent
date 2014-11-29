@@ -5,6 +5,8 @@ var proudParentControllerModule = angular.module('proudParentControllerModule', 
 
 proudParentControllerModule.controller('menuCtrl', ['$scope', '$state', '$rootScope',
     function ($scope, $state, $rootScope) {
+        $scope.name = localStorage.getItem("firstName");
+        $scope.kidsName = localStorage.getItem("kidName");
 
         $scope.$goBack = function () {
             window.history.back();

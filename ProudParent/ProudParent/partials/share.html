@@ -1,7 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
 <body>
-    <h1>Share Album</h1>
+    <div ng-controller="menuCtrl">
+        <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
+        <h1>Share Leaf</h1>
+    </div>
     <button onclick="window.plugins.socialsharing.shareViaTwitter('Message via Twitter')">message via Twitter</button>
     <button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button>
 

@@ -1,4 +1,19 @@
-﻿/* BOTTOM MENU   
+﻿/* GENERAL CSS  
+----------------------------------------------------------*/
+h1 {/*Reserving for title of page*/
+    color: #fff;
+    top: -5px;
+    width: 100%;
+    position:  relative;
+    text-align: center;
+    font-family: "Lobster Two", serif;
+}
+
+p, a {
+    font-family: "Amaranth", sans-serif;
+}
+
+/* BOTTOM MENU   
 ----------------------------------------------------------*/
 #menu ul
 {
@@ -26,11 +41,11 @@
 
 #topBar {
     width:100%;
-    height: 60px;
+    height: 70px;
     top: 0px;
     background-color: #574123;
     position: absolute;
-    z-index: -10;
+    //z-index: -10;
  
 }
 #backButton {
@@ -41,33 +56,59 @@
     z-index: 50;
 
 }
-h1 {/*Reserving for title of page*/
-    color: #fff;
-    top: -5px;
-    width: 100%;
-    position:  relative;
-    text-align: center;
-<<<<<<< HEAD
-}
+
 
 /* LOG IN PAGE   
 ----------------------------------------------------------*/
 .accountArea {
     background-color: #b7c68b;
-    padding: 1em;
+    padding: 2em 1em;
     margin: 1em 2em;
     text-align: center;
+    border-radius: 25px;
 }
 
 .accountArea a {
     color: white;
-    font-family: "Lobster", sans-serif;
 }
 
-#li {
+.accountArea input {
+    width: 100%;
+}
+
+.accountArea button {
+    width: 100%;
+}
+
+li {
     list-style-type: none;
 }
+
 #buttonText{
     list-style-type: none;
->>>>>>> bb7bcee550cb1413f965c6c6bc0d49f77ac10282
 }
+
+.start {
+    background-color: #574123;
+    padding-top: 3em;
+    height: 100vh;
+    width:100vw;
+}
+
+/* KID CSS
+----------------------------------------------------------*/
+#kidul a {
+    color: #574123;
+}
+
+#kidul li {
+    text-align: center;
+    margin: 1em;
+    list-style-type: none;
+}
+
+.addKidArea {
+    padding: 2em 1em;
+    text-align: center;
+}
+

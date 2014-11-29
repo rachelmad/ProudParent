@@ -1,15 +1,9 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-    <script src="scripts/camera.js"></script>
-    <link href="css/index.css" rel="stylesheet" />
-</head>
-<body>
-       
-
+﻿<body>
     <div>
-        <h1>[Name of kid]</h1>
+        <div ng-controller="menuCtrl">
+            <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
+            <h1>{{kidsName}}</h1>
+        </div>
         tree!!!!
     </div>
     </body>

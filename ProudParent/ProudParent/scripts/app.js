@@ -17,9 +17,9 @@
             state('Default', {
                 url: "",
                 views: {
-                    "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
+                    //"top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
                     "app": { templateUrl: "partials/logIn.html" },
-                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                    //"menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
             }).
             state('ChooseKid', {
@@ -75,7 +75,7 @@
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
                     "app": { templateUrl: "partials/signUp.html" },
-                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                    //"menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
             }).
             state('AddKid', {

@@ -1,13 +1,18 @@
 ﻿
 <body>
-    <h1>ProudParent</h1>
+    <div ng-controller="menuCtrl">
+        <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
+        <h1>Hi {{name}}!</h1>
+    </div>
     <!--Write function to get/list all kids-->
-    <ul ng-controller="kidCtrl">
-        <li ng-repeat="k in kids">
-            <a ng-click="getMedia(k.name, k.id)">{{k.name}}</a>
-        </li>
-        <li><a ui-sref="AddKid">Add Child</a></li>
-    </ul>
+    <div id="kidul">
+        <ul ng-controller="kidCtrl">
+            <li ng-repeat="k in kids">
+                <a ng-click="getMedia(k.name, k.id)">{{k.name}}</a>
+            </li>
+            <li><a ui-sref="AddKid">Add Child</a></li>
+        </ul>
+    </div>
 
     <!--<a ui-sref="Home">Kid One</a>-->
     

@@ -1,22 +1,28 @@
 ﻿<body>
-    <h1>Sign Up</h1>
-    <div class="accountArea" ng-controller="logIn">
-        
-        <form id="signUpForm">
-            First Name: <input type="text" required ng-model="signUpInfo.fName" />
-            Last Name: <input type="text" required ng-model="signUpInfo.lName" />
-            Email: <input type="email" required ng-model="signUpInfo.uName" />
-            Password: <input type="password" required ng-model="signUpInfo.pword" />
-            <br />
-            <button ng-click='addUser(signUpInfo)'>Sign Up</button>
-            <!--<label>First Name: <input name="fName" required /></label>
-            <!--<label>Last Name: <input name="lName" required /></label>
-            <!--<label>Email:<input name="uName" required /></label>
-            <!--<br />
-            <!--<label>Password: <input name="pword" required /></label>
-            <!--<br />
-            <input type="button" value="Sign Up" onclick="signUp(this.form)">-->
-        </form>
-        
+    <div ng-controller="menuCtrl">
+        <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
+        <h1>Hello!</h1>
+    </div>
+    <div class="start">
+        <div class="accountArea" ng-controller="logIn">
+
+            <form id="signUpForm">
+                First Name: <input type="text" required ng-model="signUpInfo.fName" />
+                Last Name: <input type="text" required ng-model="signUpInfo.lName" />
+                Email: <input type="email" required ng-model="signUpInfo.uName" />
+                Password: <input type="password" required ng-model="signUpInfo.pword" />
+                <br />
+                <br />
+                <button ng-click='addUser(signUpInfo)'>Sign Up</button>
+                <!--<label>First Name: <input name="fName" required /></label>
+                <!--<label>Last Name: <input name="lName" required /></label>
+                <!--<label>Email:<input name="uName" required /></label>
+                <!--<br />
+                <!--<label>Password: <input name="pword" required /></label>
+                <!--<br />
+                <input type="button" value="Sign Up" onclick="signUp(this.form)">-->
+            </form>
+
+        </div>
     </div>
 </body>

@@ -1,10 +1,14 @@
 ﻿<body>
-    <h1>Add Child</h1>
+    <div ng-controller="menuCtrl">
+        <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
+        <h1>Add a Child</h1>
+    </div>
 
     <div class="addKidArea" ng-controller="addKidCtrl">
         <form id="addKidForm">
-            <label>Name: <input type="text" ng-model="childInfo.name" /></label>
-            <label>Birthday: <input type="date" placeholder="Password" ng-model="childInfo.bday"></label>
+            <label>Name: <input type="text" ng-model="childInfo.name" /></label><br />
+            <label>Birthday: <input type="date" placeholder="Password" ng-model="childInfo.bday"></label><br />
+            <br />
             <!--<label><input name="uName" placeholder="Email" required /></label><br />
             <label><input name="pword" placeholder="Password" required /></label><br />-->
             <button ng-click='addChild(childInfo)'>Add</button>
