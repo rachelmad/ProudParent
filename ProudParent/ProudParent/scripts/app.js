@@ -18,7 +18,7 @@
                 url: "",
                 views: {
                     //"top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
-                    "app": { templateUrl: "partials/logIn.html" },
+                    "app": { templateUrl: "partials/logIn.html", controller: "logIn" },
                     //"menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
             }).
@@ -82,7 +82,7 @@
                 url: "/AddKid",
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
-                    "app": { templateUrl: "partials/addKid.html" },
+                    "app": { templateUrl: "partials/addKid.html"/*, controller: "kidCtrl" */},
                     "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
             });
