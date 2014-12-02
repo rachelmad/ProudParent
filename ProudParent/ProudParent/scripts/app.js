@@ -85,5 +85,13 @@
                     "app": { templateUrl: "partials/addKid.html"/*, controller: "kidCtrl" */},
                     "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
+            }).
+        state('AddBackground', {
+                url: "/AddBackground",
+                views: {
+                    "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
+                    "app": { templateUrl: "partials/addbackground.html" },
+                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                }
             });
     });

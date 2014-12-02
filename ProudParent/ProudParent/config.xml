@@ -11,10 +11,11 @@
   <access origin="*" />
   <preference name="SplashScreen" value="screen" />
   <preference name="AndroidLaunchMode" value="standard" />
-  <vs:features>
-    <vs:feature>org.apache.cordova.inappbrowser@0.5.0</vs:feature>
-    <vs:feature>com.msopentech.azure-mobile-services@0.1.2</vs:feature>
-    <vs:feature>org.apache.cordova.camera@0.3.0</vs:feature>
-  </vs:features>
+  <vs:plugin name="org.apache.cordova.inappbrowser" version="0.5.0" />
+  <vs:plugin name="com.msopentech.azure-mobile-services" version="0.1.2" />
+  <vs:plugin name="org.apache.cordova.camera" version="0.3.0" />
+  <vs:plugin name="nl.x-services.plugins.socialsharing" version="4.3.10" />
+  <vs:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+  <vs:plugin name="com.msopentech.azure-mobile-services" version="0.1.4" />
   <vs:platformSpecificValues />
 </widget>
