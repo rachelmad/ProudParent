@@ -152,3 +152,11 @@ li {
    padding-right: 5%;
    text-align: center;
 }
+
+#bkg {
+    width: 75px;
+    height: 75px;
+    /*display: inline-block;*/
+
+
+}
