@@ -123,7 +123,8 @@ kidControl.controller('kidCtrl', ['$scope', '$state',
         $scope.getMedia = function (name, id) {
             var query = mediaTable.where({
                 childid: id
-            })
+            }).select('id', 'name', 'date', 'type')
+                .orderBy('date')
                 .read().done(function (results) {
                     localStorage.setItem("kidMedia", JSON.stringify(results));
                     localStorage.setItem("kidName", name);
@@ -131,6 +132,14 @@ kidControl.controller('kidCtrl', ['$scope', '$state',
                     $state.go('Home');
                 });
         }
+    }
+]);
+
+var mediaControl = angular.module('mediaControl', []);
+
+mediaControl.controller('mediaCtrl', ['$scope', '$state',
+    function ($scope, $state) {
+        $scope.media = angular.fromJson(localStorage.getItem("kidMedia"));       
     }
 ]);
 
