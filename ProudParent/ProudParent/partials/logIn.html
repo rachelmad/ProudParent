@@ -2,20 +2,20 @@
     <!--Figure out how to log in-->
     <div class="start">
         <h1 style="margin-top: 1em">ProudParent</h1>
-        <div class="accountArea" ng-controller="logIn">
+        <div id="main" class="accountArea" ng-controller="logIn">
             <form id="logInForm">
                 <input type="email" placeholder="Email" ng-model="log.uName" />
                 <input type="password" placeholder="Password" ng-model="log.pword">
                 <br />
                 <br />
                 <!--<label><input name="uName" placeholder="Email" required /></label><br />
-                <label><input name="pword" placeholder="Password" required /></label><br />-->
+            <label><input name="pword" placeholder="Password" required /></label><br />-->
                 <button ng-click='authenticate(log)'>Log In</button>
                 <!--<input type="button" value="Log In" onclick="authenticateEmail(this.form)">-->
             </form>
             <br />
             <p>New? <a ui-sref="SignUp">Create account</a></p>
         </div>
-        <a ui-sref="Home">Skip login<img src="img\next.png"></a>
+        <a ui-sref="ChooseKid">Skip login<img src="img\next.png"></a>
     </div>
 </body>
