@@ -139,7 +139,12 @@ var mediaControl = angular.module('mediaControl', []);
 
 mediaControl.controller('mediaCtrl', ['$scope', '$state',
     function ($scope, $state) {
-        $scope.media = angular.fromJson(localStorage.getItem("kidMedia"));       
+        $scope.media = angular.fromJson(localStorage.getItem("kidMedia"));
+
+        $scope.background = function (bgname) {
+            localStorage.setItem("background", bgname);
+            $state.go('Camera');
+        };
     }
 ]);
 

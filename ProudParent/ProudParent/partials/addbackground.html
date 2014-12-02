@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
 <head>
     <title></title>
@@ -6,15 +6,16 @@
 <body>
     <h1>Add Background</h1>
     <div id="main">
-        <div id="bkgContainer">
-            <a ui-sref="Camera"><img id="bkg" src="img\Navy-Chevron.jpg"></a>
-            <a ui-sref="Camera"><img id="bkg" src="img\5-Abstract-Simple-Patterns-with-PSD-Pat-File-thumb04.jpg"></a>
-            <a ui-sref="Camera"><img id="bkg" src="img\chevron.bleu.cpm027_1.jpg"></a>
-            <a ui-sref="Camera"><img id="bkg" src="img\grey_vertical_stripes.jpg"></a>
-            <a ui-sref="Camera"><img id="bkg" src="img\snowflake-pattern.jpg"></a>
-            <a ui-sref="Camera"><img id="bkg" src="img\tile.jpg"></a>
-            <a ui-sref="Camera"><img id="bkg" src="img\wide-chevron-yellow.jpg"></a>
-        </div>
-    </div>
+        <ul ng-controller="mediaCtrl">
+            <div id="bkgContainer">
+                <a ng-click="background(navy.chevron)"><img id="bkg" src="img\Navy-Chevron.jpg"></a>
+                <a ng-click="background(abstract.simple)"><img id="bkg" src="img\5-Abstract-Simple-Patterns-with-PSD-Pat-File-thumb04.jpg"></a>
+                <a ng-click="background(chevron.bleu)"><img id="bkg" src="img\chevron.bleu.cpm027_1.jpg"></a>
+                <a ng-click="background(grey.vertical)"><img id="bkg" src="img\grey_vertical_stripes.jpg"></a>
+                <a ng-click="background(snowflake)"><img id="bkg" src="img\snowflake-pattern.jpg"></a>
+                <a ng-click="background(tile)"><img id="bkg" src="img\tile.jpg"></a>
+                <a ng-click="background(chevron.yellow)"><img id="bkg" src="img\wide-chevron-yellow.jpg"></a>
+            </div>
+</div>
 </body>
 </html>
