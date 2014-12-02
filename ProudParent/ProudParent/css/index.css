@@ -108,7 +108,7 @@ li {
 
 #kidul li {
     text-align: center;
-    margin: 1em;
+    /*margin: 1em;*/
     list-style-type: none;
 }
 
