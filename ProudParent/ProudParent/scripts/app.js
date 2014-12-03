@@ -67,7 +67,7 @@
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
                     "app": { templateUrl: "partials/addAlbum.html" },
-                    //"menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
             }).
             state('SignUp', {

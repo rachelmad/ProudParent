@@ -6,24 +6,15 @@
         <h1>Add Leaf</h1>
     </div>
     <div id="main">
-        <form action="demo_form.asp">
-            <div>
-                <img id="albumBkg" ng-src="{{background}}">
-            </div>
-            <div>
-                <input id="albumPic" type="image" name="albumPic">
-            </div>
-            <div>
-                <input id="albumText" type="text" name="story">
-            </div>
-            <div id="submitBar">
-                <input id="saveAlbum" type="submit" value="Submit">
-            </div>
-        </form>
-</div>
-
-    
-       
+        <ul id="addAlbum">
+            <li><a ui-sref="Camera" style="color: #b7c68b"><h3><i class=" fa fa-camera fa-5x"></i></h3></a></li>
+            <li>Capture Moment</li>
+            <li><a ui-sref="Camera" style="color: #b7c68b"><h3><i class=" fa fa-upload fa-5x"></i></h3></a></li>
+            <li>Upload</li>
+            <li><a ui-sref="Home" style="color: #b7c68b"><h3><i class=" fa fa-heart fa-5x"></i></h3></a></li>
+            <li>View Albums</li>
+        </ul>
+    </div>
 
 </body>
 </html>
