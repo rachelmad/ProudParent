@@ -17,9 +17,7 @@
             state('Default', {
                 url: "",
                 views: {
-                    //"top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
-                    "app": { templateUrl: "partials/logIn.html", controller: "logIn" },
-                    //"menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                    "app": { templateUrl: "partials/logIn.html", controller: "logIn" }
                 }
             }).
             state('ChooseKid', {
@@ -67,7 +65,6 @@
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
                     "app": { templateUrl: "partials/addAlbum.html" },
-                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
             }).
             state('SignUp', {
