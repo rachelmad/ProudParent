@@ -1,11 +1,6 @@
 ﻿<body>
-    <!--<div ng-controller="menuCtrl">
-        <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
-        <h1>Hello!</h1>
-    </div>-->
-    <div id="main" class="start">
-        <div class="accountArea" ng-controller="logIn">
-
+    <div class="start">
+        <div id="main" class="accountArea" ng-controller="logIn">
             <form id="signUpForm">
                 First Name: <input type="text" required ng-model="signUpInfo.fName" />
                 Last Name: <input type="text" required ng-model="signUpInfo.lName" />
@@ -15,12 +10,12 @@
                 <br />
                 <button ng-click='addUser(signUpInfo)'>Sign Up</button>
                 <!--<label>First Name: <input name="fName" required /></label>
-                <!--<label>Last Name: <input name="lName" required /></label>
-                <!--<label>Email:<input name="uName" required /></label>
-                <!--<br />
-                <!--<label>Password: <input name="pword" required /></label>
-                <!--<br />
-                <input type="button" value="Sign Up" onclick="signUp(this.form)">-->
+            <!--<label>Last Name: <input name="lName" required /></label>
+            <!--<label>Email:<input name="uName" required /></label>
+            <!--<br />
+            <!--<label>Password: <input name="pword" required /></label>
+            <!--<br />
+            <input type="button" value="Sign Up" onclick="signUp(this.form)">-->
             </form>
 
         </div>

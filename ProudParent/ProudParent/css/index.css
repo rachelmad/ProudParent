@@ -7,7 +7,6 @@ h1 {/*Reserving for title of page*/
     position:  fixed;
     text-align: center;
     font-family: "Lobster Two", serif;
-
 }
 
 p, a {
@@ -19,7 +18,7 @@ p, a {
             font-size: 20px;
         }
  #main {
-     margin-top: 72px;
+     margin-top: 70px;
  }
 /* BOTTOM MENU   
 ----------------------------------------------------------*/
@@ -32,7 +31,12 @@ p, a {
 #menu li {
     display: inline;
     padding-left: 1em;
-    padding-right: 1em;
+    /*padding-right: 1em;*/
+}
+#plus {
+    width: 15px;
+    height:15px;
+    top: -5px;
 }
 
 #menu {
@@ -46,19 +50,12 @@ p, a {
     width: 100%;
     text-align: center;
 }
-#menuTxt {
-    text-align: center;
-    color: white;
-}
-
 #topBar {
     width:100%;
     height: 70px;
     top: 0px;
     background-color: #574123;
-    position: fixed;
-    //z-index: -10;
- 
+    position: fixed; 
 }
 #backButton {
     position: fixed;
@@ -66,9 +63,7 @@ p, a {
     left: 0px;
     width: 30px;
     z-index: 50;
-
 }
-
 
 /* LOG IN PAGE   
 ----------------------------------------------------------*/
@@ -78,6 +73,10 @@ p, a {
     padding-top: 3em;
     height: 100vh;
     width: 100vw;
+}
+
+#signUpForm {
+
 }
 
 .accountArea {
@@ -106,6 +105,7 @@ li {
 
 #buttonText{
     list-style-type: none;
+    background-color: #fff;
 }
 
 /* KID CSS
@@ -128,13 +128,13 @@ li {
 #lBranch{
     left: 0px;
     position: fixed;
-    bottom: 40px;
+    bottom: 0px;
 }
 #rBranch{
     right: 0px;
     position: fixed;
     transform: scaleX(-1);
-    bottom: 40px;
+    bottom: 0px;
 }
 /*  HOME PAGE AND TREE         
  ----------------------------------------------------------*/
@@ -168,7 +168,6 @@ li {
 .left {
     width: 50%;
     float: left;
-    /*right: 0px;*/
     padding-right: 5px;
 }
 .left img {
@@ -189,12 +188,9 @@ li {
 }
 #bkgContainer
 {
+    margin-left: 5px;
     width: 100vw;
-
-    margin-left: 4vw;
-    margin-right: 4vw;
 }
-
 #bkg {
     width: 45vw;
     height: 30vh;
@@ -241,4 +237,19 @@ li {
     width: 50%;
     background-color: white;
 
+}
+
+/*  SHARE 
+------------------------------------------------------------*/
+#share{
+    margin-top: 15px;
+    margin-left: 10vw;
+}
+#Twitter{
+    width: 80vw;
+    height: 80px;
+}
+#Facebook {
+    width: 80vw;
+    height: 80px;
 }

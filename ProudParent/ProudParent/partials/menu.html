@@ -1,46 +1,23 @@
 ﻿
 <div id="menu">
-    <div>
         <div ng-show="state.is('Home')">
             <ul>
-                <li><a ui-sref="AddBackground"><img src="img\leaf.png"></a></li>
+                <li><a ui-sref="AddBackground"><img src="img\leaf.png"><img id="plus" src="img\plus.png"></a></li>
                 <li><a ui-sref="Home"><img src="img\home.png"></a></li>
             </ul>
-            <ul id="menuTxt">
-                <li>Add</li>
-                <li>Home</li>
-            </ul>
+
         </div>
         <div ng-show="state.is('Share')">
             <ul>
-                <li><a ui-sref="AddBackground"><img src="img\leaf.png"></a></li>
                 <li><a ui-sref="Home"><img src="img\home.png"></a></li>
             </ul>
-            <ul id="menuTxt">
-                <li>Add</li>
-                <li>Home</li>
-            </ul>
+
         </div>
         <div ng-show="state.is('Album')">
             <ul>
-                <li><a ui-sref="AddBackground"><img src="img\leaf.png"></a></li>
+                <li><a ui-sref="AddBackground"><img src="img\image.png"><img id="plus" src="img\plus.png"></a></li>
                 <li><a ui-sref="Home"><img src="img\home.png"></a></li>
                 <li><a ui-sref="Share"> <img src="img\share.png"></a></li>
             </ul>
-            <ul id="menuTxt">
-                <li>Add</li>
-                <li>Home</li>
-                <li>Share</li>
-            </ul>
         </div>
-
-    </div>
-
-    <!--<ul>
-        <li><a ui-sref="AddBackground"><img src="img\leaf.png"></a></li>
-        <li><a ui-sref="Home"><img src="img\home.png"></a></li>
-        <li><a ui-sref="Share"> <img src="img\share.png"></a></li>
-    </ul>-->
-
-
 </div>

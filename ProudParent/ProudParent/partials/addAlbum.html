@@ -1,20 +1,14 @@
-﻿<!DOCTYPE html>
-<html>
-<body>
-    <!--<div ng-controller="menuCtrl">
-        <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
-        <h1>Add Leaf</h1>
-    </div>-->
+﻿<body>
     <div id="main">
         <form action="demo_form.asp">
             <div>
                 <img id="albumBkg" ng-src="{{background}}">
             </div>
             <div>
-                <input id="albumPic" type="image" name="albumPic">
+                <input id="albumPic" type="image" placeholder="Add Picture" ng-model="log.image">
             </div>
             <div>
-                <input id="albumText" type="text" name="story">
+                <textarea rows="10" cols="20" id="albumText" type="text" wrap="hard" placeholder="Story" ng-model="log.story"></textarea>
             </div>
             <div id="submitBar">
                 <input id="saveAlbum" type="submit" value="Submit">
@@ -23,4 +17,3 @@
     </div>
 
 </body>
-</html>

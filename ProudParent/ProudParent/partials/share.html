@@ -1,11 +1,11 @@
 ﻿
 <body>
-    <!--<div ng-controller="menuCtrl">
-        <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
-        <h1>Share Leaf</h1>
-    </div>-->
     <div id="main">
-        <button onclick="window.plugins.socialsharing.shareViaTwitter('Message via Twitter')">message via Twitter</button>
-        <button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button>
+        <div id="share">
+            <button onclick="window.plugins.socialsharing.shareViaTwitter('Message via Twitter')"><img id="Twitter" src="img\twitter.png"></button>
+        </div>
+        <div id="share">
+            <button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})"><img id="Facebook" src="img\Facebooklogo.png"></button>
+        </div>
     </div>
 </body>
