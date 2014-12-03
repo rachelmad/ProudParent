@@ -1,10 +1,9 @@
-﻿<body>
-    <!--<div ng-controller="menuCtrl">
-        <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
-        <h1>Add a Child</h1>
-    </div>-->
-
-    <div id="main" class="addKidArea" ng-controller="addKidCtrl">
+﻿<div id="main">
+    <div id="trees">
+        <img id="lBranch" ng-src="img/greenTree.PNG">
+        <img id="rBranch" ng-src="img/greenTree.PNG">
+    </div>
+    <div class="addKidArea" ng-controller="addKidCtrl">
         <form id="addKidForm">
             <label>Name: <input type="text" ng-model="childInfo.name" /></label><br />
             <label>Birthday: <input type="date" placeholder="Password" ng-model="childInfo.bday"></label><br />
@@ -15,5 +14,4 @@
             <!--<input type="button" value="Log In" onclick="authenticateEmail(this.form)">-->
         </form>
     </div>
-
-</body>
+</div>

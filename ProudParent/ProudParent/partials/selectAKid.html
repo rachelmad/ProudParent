@@ -1,11 +1,9 @@
 ﻿
-<body>
     <!--<div ng-controller="menuCtrl">
         <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
         <h1>Hi {{name}}!</h1>
     </div>-->
-    <!--Write function to get/list all kids-->
-    <div id="main">
+<div id="main">
         <div id="kidul" ng-controller="kidCtrl">
             <div ng-repeat="k in kids">
                 <a ng-click="getMedia(k.name, k.id)">{{k.name}}</a>
@@ -24,11 +22,4 @@
 
         <img id="lBranch" ng-src="img/greenTree.PNG">
         <img id="rBranch" ng-src="img/greenTree.PNG">
-
-        <!--<a ui-sref="Home">Kid One</a>-->
-        <!--<div ng-controller="listKidsCtrl">
-            <button ng-click="kids.list()">Click me!</button>
-        </div>-->
-        <!--<h3>Options</h3>-->
 </div>
-</body>

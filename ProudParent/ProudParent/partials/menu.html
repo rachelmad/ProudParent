@@ -3,21 +3,21 @@
         <div ng-show="state.is('Home')">
             <ul>
                 <li><a ui-sref="AddBackground"><img src="img\leaf.png"><img id="plus" src="img\plus.png"></a></li>
-                <li><a ui-sref="Home"><img src="img\home.png"></a></li>
+                <li id="kids"><a ui-sref="ChooseKid"><img id="treeIcon" src="img\fullTree.png"></a></li>
             </ul>
 
         </div>
         <div ng-show="state.is('Share')">
             <ul>
-                <li><a ui-sref="Home"><img src="img\home.png"></a></li>
+                <li><a ui-sref="Home"><img id="homeIcon" src="img\home.png"></a></li>
             </ul>
 
         </div>
         <div ng-show="state.is('Album')">
             <ul>
                 <li><a ui-sref="AddBackground"><img src="img\image.png"><img id="plus" src="img\plus.png"></a></li>
-                <li><a ui-sref="Home"><img src="img\home.png"></a></li>
-                <li><a ui-sref="Share"> <img src="img\share.png"></a></li>
+                <li><a ui-sref="Home"><img id="homeIcon" src="img\home.png"></a></li>
+                <li><a ui-sref="Share"> <img id="shareIcon" src="img\share.png"></a></li>
             </ul>
         </div>
 </div>

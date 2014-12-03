@@ -100,16 +100,19 @@
   <ItemGroup>
     <Content Include="App.config" />
     <Content Include="img\5-Abstract-Simple-Patterns-with-PSD-Pat-File-thumb04.jpg" />
+    <Content Include="img\accessibility.png" />
     <Content Include="img\back.png" />
     <Content Include="img\blocks.jpg" />
     <Content Include="img\chevron.bleu.cpm027_1.jpg" />
     <Content Include="img\Facebooklogo.png" />
+    <Content Include="img\fullTree.png" />
     <Content Include="img\green dots.jpg" />
     <Content Include="img\greenLeaf.png" />
     <Content Include="img\greenTree.PNG" />
     <Content Include="img\grey_vertical_stripes.jpg" />
     <Content Include="img\home.png" />
     <Content Include="img\image.png" />
+    <Content Include="img\info.png" />
     <Content Include="img\leaf.png" />
     <Content Include="img\mustardLeaf.png" />
     <Content Include="img\Navy-Chevron.jpg" />
