@@ -24,8 +24,7 @@
                 url: "/ChooseKid",
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
-                    "app": { templateUrl: "partials/selectAKid.html" },
-                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                    "app": { templateUrl: "partials/selectAKid.html" }
                 }
             }).
             state('Home', {
@@ -56,8 +55,7 @@
                 url: "/Camera",
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
-                    "app": { templateUrl: "partials/takeAPic.html" },
-                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                    "app": { templateUrl: "partials/takeAPic.html" }
                 }
             }).
             state('Add', {
@@ -72,7 +70,6 @@
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
                     "app": { templateUrl: "partials/signUp.html" },
-                    //"menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
             }).
             state('AddKid', {
@@ -80,15 +77,13 @@
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
                     "app": { templateUrl: "partials/addKid.html"/*, controller: "kidCtrl" */},
-                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
                 }
             }).
         state('AddBackground', {
                 url: "/AddBackground",
                 views: {
                     "top": { templateUrl: "partials/topBar.html", controller: "menuCtrl" },
-                    "app": { templateUrl: "partials/addbackground.html" },
-                    "menu": { templateUrl: "partials/menu.html", controller: "menuCtrl" }
+                    "app": { templateUrl: "partials/addbackground.html" }
                 }
             });
     });

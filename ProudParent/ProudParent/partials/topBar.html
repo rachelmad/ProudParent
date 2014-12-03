@@ -1,16 +1,16 @@
 ﻿
     <div id="topBar">
-        <!--<div>
+        <div>
             <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
-        </div>-->
+        </div>
 
 
-        <!--<div>
-            <div ng-show="state.is('Default')">
+        <div>
+            <div ng-show="state.is('ChooseKid')">
                 <h1>Proud Parent</h1>
             </div>
             <div ng-show="state.is('Home')">
-                <h1>Child Name</h1>
+                <h1>{{kidsName}}</h1>
 
             </div>
             <div ng-show="state.is('Album')">
@@ -22,6 +22,17 @@
             <div ng-show="state.is('Camera')">
                 <h1>Take Picture</h1>
             </div>
-
-        </div>-->
+            <div ng-show="state.is('Add')">
+                <h1>Add to Album</h1>
+            </div>
+            <div ng-show="state.is('SignUp')">
+                <h1>Hello</h1>
+            </div>
+            <div ng-show="state.is('AddKid')">
+                <h1>Add Offshoot</h1>
+            </div>
+            <div ng-show="state.is('AddBackground')">
+                <h1>Select Background</h1>
+            </div>
+        </div>
     </div>

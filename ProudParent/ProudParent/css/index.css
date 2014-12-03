@@ -46,6 +46,10 @@ p, a {
     width: 100%;
     text-align: center;
 }
+#menuTxt {
+    text-align: center;
+    color: white;
+}
 
 #topBar {
     width:100%;
