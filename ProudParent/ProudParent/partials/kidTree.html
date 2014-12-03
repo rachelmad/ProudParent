@@ -1,34 +1,35 @@
 ﻿<body>
     <div>
-        <!--<div ng-controller="menuCtrl">
+        <div ng-controller="menuCtrl">
             <a ng-click="$goBack()"><img id="backButton" ng-src="img/back.png"></a>
             <h1>{{kidsName}}</h1>
-        </div>-->
-        <div id="main">
+        </div>
+        <div id="main" ng-controller="mediaCtrl">
             <img id="tree" src="img\tree.png">
 
-            <ul id="leafContainer">
-                <!-- the following are just place holders for the albums to be added -->
+            <!--<ul id="leafContainer">
+                 the following are just place holders for the albums to be added
                 <li><img id="leaf" src="img\greenLeaf.png"> </li>
                 <li> <img id="leaf" src="img\mustardLeaf.png"> </li>
                 <li> <img id="leaf" src="img\greenLeaf.png"> </li>
-            </ul>
+            </ul>-->
         </div>
         <img id="tree" src="img\tree.png">
-  
+
         <!--Write function to get/list all kids-->
-        <div id="mediaDiv">
-            <ul ng-controller="mediaCtrl">
-                <li ng-repeat="stuff in media">
-                    {{stuff.name}} {{stuff.date}}
-                    <!--<a ng-click="getMedia(k.name, k.id)">{{k.name}}</a>-->
-                </li>
-                <!--<li><a ui-sref="AddKid">Add Child</a></li>-->
-            </ul>
+        <div id="leafContainer" ng-controller="mediaCtrl">
+            <div ng-repeat="stuff in left" class="left">
+                <div style="float: right">
+                    {{stuff.name}}  <img id="leaf" src="img\greenLeaf.png">
+                </div>
+            </div>
+            <div ng-repeat="stuff in right" class="right">
+                <img id="leaf" src="img\greenLeaf.png">  {{stuff.name}}<br />
+            </div>
         </div>
 
         <!--<ul id ="leafContainer">
-             the following are just place holders for the albums to be added 
+             the following are just place holders for the albums to be added
             <li ><img id="leaf" src="img\greenLeaf.png"> </li>
             <li > <img id="leaf" src="img\mustardLeaf.png"> </li>
             <li > <img id="leaf" src="img\greenLeaf.png"> </li>

@@ -112,11 +112,23 @@ kidControl.controller('kidCtrl', ['$scope', '$state',
         $scope.getMedia = function (name, id) {
             var query = mediaTable.where({
                 childid: id
-            }).select('id', 'name', 'date', 'type')
+            }).select('id', 'name', 'date')
                 .orderBy('date')
                 .read().done(function (results) {
-                    localStorage.setItem("kidMedia", JSON.stringify(results));
-                    localStorage.setItem("kidName", name);
+                    var left = [];
+                    var right = [];
+
+                    for (var i = 0; i < results.length; i++) {
+                        if (i % 2 == 0) {
+                            left.push(results[i]);
+                        }
+                        else {
+                            right.push(results[i]);
+                        }
+                    }
+
+                    localStorage.setItem("leftMedia", JSON.stringify(left));
+                    localStorage.setItem("rightMedia", JSON.stringify(right));
 
                     $state.go('Home');
                 });
@@ -128,13 +140,22 @@ var mediaControl = angular.module('mediaControl', []);
 
 mediaControl.controller('mediaCtrl', ['$scope', '$state',
     function ($scope, $state) {
-        $scope.media = angular.fromJson(localStorage.getItem("kidMedia"));
+        $scope.left = angular.fromJson(localStorage.getItem("leftMedia"));
+        $scope.right = angular.fromJson(localStorage.getItem("rightMedia"));
 
-        $scope.background = function (bgname) {
-            localStorage.setItem("background", bgname);
-            $state.go('Camera');
+        //$scope.addMedia = function () {
+        //    var today = new Date();
+        //    var newAlbum = {
+        //        name: "Temp Album",
+        //        date: today,
+        //        childId: localStorage.getItem("userId")
+        //    };
+        //    mediaTable.insert(newAlbum).done(function (inserted) {
+        //        localStorage.setItem("thisAlbum", inserted);
 
-        };
+        //        alert("Inserted!");
+        //    });
+        //}
     }
 ]);
 
