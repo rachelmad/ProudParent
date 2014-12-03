@@ -20,11 +20,11 @@
         <div id="leafContainer" ng-controller="mediaCtrl">
             <div ng-repeat="stuff in left" class="left">
                 <div style="float: right">
-                    {{stuff.name}}  <img id="leaf" src="img\greenLeaf.png">
+                    <a ng-click="showAlbum(stuff.id, stuff.name, stuff.date)">{{stuff.name}}</a>  <img id="leaf" src="img\greenLeaf.png">
                 </div>
             </div>
             <div ng-repeat="stuff in right" class="right">
-                <img id="leaf" src="img\greenLeaf.png">  {{stuff.name}}<br />
+                <img id="leaf" src="img\greenLeaf.png">  <a ng-click="showAlbum(stuff.id, stuff.name, stuff.date)">{{stuff.name}}</a>
             </div>
         </div>
 

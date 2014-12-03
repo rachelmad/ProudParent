@@ -22,6 +22,7 @@ var client = new MobileServiceClient('https://proudparent.azure-mobile.net/', 'G
 var userTable = client.getTable('User');
 var childrenTable = client.getTable('Children');
 var mediaTable = client.getTable('Media');
+var itemsTable = client.getTable('Items');
 
 var logControl = angular.module('logControl', []);
 
@@ -143,6 +144,21 @@ mediaControl.controller('mediaCtrl', ['$scope', '$state',
         $scope.left = angular.fromJson(localStorage.getItem("leftMedia"));
         $scope.right = angular.fromJson(localStorage.getItem("rightMedia"));
 
+        $scope.showAlbum = function (id, name, date) {
+            localStorage.setItem("albumName", name);
+            localStorage.setItem("albumDate", date);
+
+            var query = itemsTable.where({
+                albumId: id
+            }).select('id', 'picString', 'description')
+                .orderBy('pageNumber')
+                .read().done(function (results) {
+                    localStorage.setItem("albumContent", JSON.stringify(results));
+                    
+                    $state.go('Album');
+                });
+
+        }
         //$scope.addMedia = function () {
         //    var today = new Date();
         //    var newAlbum = {
