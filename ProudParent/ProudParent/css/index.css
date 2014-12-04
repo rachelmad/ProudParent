@@ -171,26 +171,23 @@ li {
 }
 #leafContainer{
     position: fixed;
-    /*padding-left: 25px;*/
+    padding-left: 30px;
     top: 13.75em;
     max-height:60vh;
     width: 100%;
-    /*display: block;*/
 	overflow-y: scroll;
 	overflow-x: hidden;
-
 }
 #leaf {
-    height:50px;
+    height: 50px;
     width: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 }
-
 
 .left {
     width: 50%;
     float: left;
-    padding-right: 5px;
+    padding-right: 7px;
 }
 .left img {
     transform: scaleX(-1);
@@ -198,7 +195,7 @@ li {
 .right {
     width: 50%;
     float: right;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 /*  ADD ALBUM         
