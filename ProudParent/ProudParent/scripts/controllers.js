@@ -89,11 +89,11 @@ logControl.controller('logIn', ['$scope', '$state',
 ]);
 
 var kidControl = angular.module('kidControl', []);
+var kidId;
 
 kidControl.controller('kidCtrl', ['$scope', '$state',
     function ($scope, $state) {
         $scope.addChild = function (childInfo) {
-            alert(localStorage.getItem("userId"));
             var newKid = {
                 parentId: localStorage.getItem("userId"),
                 name: $scope.childInfo.name,
@@ -101,7 +101,7 @@ kidControl.controller('kidCtrl', ['$scope', '$state',
             };
 
             var enterKid = childrenTable.insert(newKid).done(function (inserted) {
-                localStorage.setItem("KidId", inserted.id);
+                localStorage.setItem("kidId", inserted.id);
             });
             localStorage.setItem("kidName", name);
 
@@ -111,6 +111,9 @@ kidControl.controller('kidCtrl', ['$scope', '$state',
         $scope.kids = angular.fromJson(localStorage.getItem("kidList"));
 
         $scope.getMedia = function (name, id) {
+            localStorage.setItem("kidId", id);
+            localStorage.setItem("kidName", name);
+
             var query = mediaTable.where({
                 childid: id
             }).select('id', 'name', 'date')
@@ -143,6 +146,36 @@ mediaControl.controller('mediaCtrl', ['$scope', '$state',
     function ($scope, $state) {
         $scope.left = angular.fromJson(localStorage.getItem("leftMedia"));
         $scope.right = angular.fromJson(localStorage.getItem("rightMedia"));
+        $scope.albumName = "";
+        $scope.albumDate = "";
+        $scope.albumBackground = "";
+        $scope.albumId = "";
+
+        $scope.addAlbum = function (album) {
+            $scope.albumName = album.name;
+            $scope.albumDate = album.date;
+            $scope.albumCaption = album.caption;
+
+            alert($scope.albumName);
+            $state.go('AddBackground');
+        }
+
+        $scope.setBackground = function (bgName) {
+            $scope.albumBackground = bgName;
+
+            $state.go("Camera");
+            //var newAlbum = {
+            //    name: $scope.albumName,
+            //    date: $scope.albumDate,
+            //    childId: localStorage.getItem("kidId"),
+            //    bgImage: $scope.albumBackground,
+            //};
+
+            //var enterAlbum = childrenTable.insert(newAlbum).done(function (inserted) {
+            //    $scope.albumId = inserted.id;
+            //});
+            
+        }
 
         $scope.showAlbum = function (id, name, date) {
             localStorage.setItem("albumName", name);
@@ -159,6 +192,8 @@ mediaControl.controller('mediaCtrl', ['$scope', '$state',
                 });
 
         }
+
+        
         //$scope.addMedia = function () {
         //    var today = new Date();
         //    var newAlbum = {

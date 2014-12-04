@@ -1,6 +1,24 @@
 ﻿<body>
     <div id="main">
-        <form action="demo_form.asp">
+        <div id="trees">
+            <img id="lBranch" ng-src="img/greenTree.PNG">
+            <img id="rBranch" ng-src="img/greenTree.PNG">
+        </div>
+        <form class="addKidArea" ng-controller="mediaCtrl">
+            <input type="text" placeholder="Leaf Name" ng-model="album.name" required />
+            <br />
+            <input type="date" ng-model="album.date" />
+            <br />
+            <textarea rows="5" placeholder="Caption" ng-model="album.caption" ></textarea>
+            <br />
+            <br />
+            <!--<label><input name="uName" placeholder="Email" required /></label><br />
+        <label><input name="pword" placeholder="Password" required /></label><br />-->
+            <button ng-click='addAlbum(album)'>Next</button>
+            <!--<input type="button" value="Log In" onclick="authenticateEmail(this.form)">-->
+        </form>
+
+        <!--<form action="demo_form.asp">
             <div>
                 <img id="albumBkg" ng-src="{{background}}">
             </div>
@@ -13,7 +31,7 @@
             <div id="submitBar">
                 <input id="saveAlbum" type="submit" value="Submit">
             </div>
-        </form>
+        </form>-->
     </div>
 
 </body>
